@@ -23,7 +23,7 @@ const CreateBlog = () => {
     data.append("blog-image", imageFile);
 
     const newBlog = await axios.post(
-      "http://localhost:8080/api/v1/blogs",
+      "https://blog-app-api-delta.vercel.app/api/v1/blogs",
       data,
       { headers: { Authorization: `Bearer ${accessToken}` } }
     );

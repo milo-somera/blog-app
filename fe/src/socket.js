@@ -1,6 +1,6 @@
 import { io } from "socket.io-client";
 
-const URL = "http://localhost:8080";
+const URL = "https://blog-app-api-delta.vercel.app/";
 
 const socket = io(URL, {
   autoConnect: false,

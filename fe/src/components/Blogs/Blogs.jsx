@@ -23,7 +23,7 @@ const Blogs = () => {
     (async () => {
       const {
         data: { data },
-      } = await axios.get("http://localhost:8080/api/v1/blogs");
+      } = await axios.get("https://blog-app-api-delta.vercel.app/api/v1/blogs");
 
       localStorage.setItem("blogs", JSON.stringify(data));
       dispatch({ type: "BLOG_LIST", payload: data });
